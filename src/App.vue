@@ -76,6 +76,10 @@ export default {
                 { title: 'アニメ検索', icon: 'mdi-magnify', path: '/search'},
                 { title: 'お気に入り', icon: 'mdi-heart' ,path:'/'},
 
+                { title: '視聴中リスト', icon: 'mdi-heart' ,path:'/'},
+
+                { title: '視聴済みリスト', icon: 'mdi-heart' ,path:'/'},
+
                 // { title: '連絡先一覧', icon: 'list' }
             ]
     }
@@ -88,9 +92,9 @@ export default {
 }
 </script>
 
-<style scoped>
-  a{
-    text-decoration: none;
-    color:black
-  }
+<style lang="scss">
+html,
+html.overflow-y-hidden {
+  overflow-y: scroll !important;
+}
 </style>
